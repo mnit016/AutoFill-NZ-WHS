@@ -1,0 +1,38 @@
+### AUTOFILL PROFILES ###,,,,,,
+Profile ID,Name,Site,Hotkey,,,
+c1,retry-pay,,,,,
+### AUTOFILL RULES ###,,,,,,
+Rule ID,Type,Name,Value,Site,Mode,Profile
+r1,4,"","document.getElementById('ContentPlaceHolder1_applicationList_applicationsDataGrid_payHyperLink_0').click();","",1,c1
+r2,4,"","document.getElementById('ContentPlaceHolder1_onlinePaymentAnchor2').click();","",1,c1
+r6,0,"^_ctl0:ContentPlaceHolder1:payerNameTextBox$","<Payer name>","",1,c1
+r4,4,"","document.getElementById('_ctl0_ContentPlaceHolder1_okButton').click();","",1,c1
+r3,4,"","document.getElementById('_ctl0_ContentPlaceHolder1_AlertControl_alertLabel') != null ? document.getElementById('_ctl0_ContentPlaceHolder1_cancelButton').click() : ""nothing"";","",1,c1
+r7,0,"^cardnumber$","<input your card number>","",1,c1
+r8,0,"^expirydate$","<your card expiry date>","",1,c1
+r9,0,"^cardverificationcode$","<your CCV>","",1,c1
+r10,0,"^cardholder$","<Card holder name>","",1,c1
+r11,4,"","document.getElementsByClassName('payment-button')[0].click();","",1,c1
+### AUTOFILL OPTIONS ###,,,,,,
+advanced,"[""r3: delay=0.5""]",,,,,
+exceptions,"[]",,,,,
+textclips,"[]",,,,,
+variables,"[]",,,,,
+activecat,1,,,,,
+autoimport,0,,,,,
+backup,0,30,,,,
+badge,1,,,,,
+closeinfobar,1,1,,,,
+debug,0,,,,,
+delay,0,0.5,,,,
+fluid,1,,,,,
+hidebackup,0,,,,,
+manual,0,,,,,
+mask,1,,,,,
+menu,1,,,,,
+overwrite,1,,,,,
+sitefilters,1,,,,,
+skiphidden,0,,,,,
+sound,1,,,,,
+vars,1,,,,,
+voice,0,1,,,,
